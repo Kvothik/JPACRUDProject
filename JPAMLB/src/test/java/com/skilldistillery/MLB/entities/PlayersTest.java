@@ -41,7 +41,6 @@ class PlayersTest {
 
 	@Test
 	void test() {
-		assertNotNull(p);
 		assertEquals("Jose", p.getFirstName());
 	}
 
