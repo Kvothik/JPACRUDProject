@@ -8,8 +8,8 @@ public interface MLBDAO {
 	Players findById(int id);
 	List<Players> findByTeam(String team);
 	List<Players> findAll();
-	Players createPlayer();
-	Players updatePlayer();
-	Players deletePlayer();
+	Players createPlayer(Players player);
+	boolean updatePlayer(Players player);
+	boolean deletePlayer(int id);
 	
 }

@@ -50,18 +50,17 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `MLBdb`;
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (1, 'Jose', 'Altuve', 31, 74, .298, 'second base', 'astros', 29, 27);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (2, 'Alex', 'Bregman', 41, 112, .296, 'third base', 'astors', 25, 2);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (3, 'Carlos', 'Correa', 21, 59, .279, 'short stop', 'astros', 25, 1);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (4, 'George', 'Springer', 39, 96, .292, 'right field', 'astros', 30, 4);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (5, 'Yordan', 'Alvarez', 27, 78, .313, 'left field', 'astros', 22, 44);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (6, 'Jake', 'Marisnick', 10, 34, .233, 'center field', 'astros', 28, 6);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (7, 'Yuli', 'Gurriel', 31, 104, .298, 'third base', 'astros', 35, 10);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (8, 'Michael', 'Brantley', 22, 90, .311, 'outfield', 'astros', 32, 23);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (9, 'Aledmys', 'Diaz', 9, 40, .271, 'short stop', 'astros', 29, 16);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (10, 'Josh', 'Reddick', 14, 56, .275, 'right field', 'astros', 32, 22);
-INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (11, 'Kyle', 'Tucker', 4, 11, .269, 'first base', 'astros', 22, 3);
-
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (1, 'Carlos', 'Correa', 21, 59, .279, 'short stop', 'Astros', 25, 1);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (2, 'George', 'Springer', 39, 96, .292, 'right field', 'Astros', 30, 4);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (3, 'Yordan', 'Alvarez', 27, 78, .313, 'left field', 'Astros', 22, 44);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (4, 'Jake', 'Marisnick', 10, 34, .233, 'center field', 'Astros', 28, 6);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (5, 'Yuli', 'Gurriel', 31, 104, .298, 'third base', 'Astros', 35, 10);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (6, 'Michael', 'Brantley', 22, 90, .311, 'outfield', 'Astros', 32, 23);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (7, 'Aledmys', 'Diaz', 9, 40, .271, 'short stop', 'Astros', 29, 16);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (8, 'Josh', 'Reddick', 14, 56, .275, 'right field', 'Astros', 32, 22);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (9, 'Kyle', 'Tucker', 4, 11, .269, 'first base', 'Astros', 22, 3);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (10, 'Jose', 'Altuve', 31, 74, .298, 'second base', 'Astros', 29, 27);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (11, 'Alex', 'Bregman', 41, 112, .296, 'third base', 'Astros', 25, 2);
 
 COMMIT;
 

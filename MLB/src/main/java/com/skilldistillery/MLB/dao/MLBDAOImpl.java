@@ -24,33 +24,45 @@ public class MLBDAOImpl implements MLBDAO {
 
 	@Override
 	public List<Players> findByTeam(String team) {
-		String query = "select players from Players players where players.team = :team";
+		String query = "select p from Players p where p.team = :team";
 		List<Players> results = em.createQuery(query, Players.class).setParameter(1, team).getResultList();
 		return results;
 	}
 
 	@Override
 	public List<Players> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		String query = "select p from Players p";
+		List<Players> results = em.createQuery(query, Players.class).getResultList();
+		return results;
 	}
 
 	@Override
-	public Players createPlayer() {
-		// TODO Auto-generated method stub
-		return null;
+	public Players createPlayer(Players player) {
+		Players p = player;
+		em.persist(p);
+		return p;
 	}
 
 	@Override
-	public Players updatePlayer() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean updatePlayer(Players player) {
+		Players p = em.find(Players.class, player.getId());
+		p.setFirstName(player.getFirstName());
+		p.setLastName(player.getLastName());
+		p.setHomeruns(player.getHomeruns());
+		p.setRbi(player.getRbi());
+		p.setBattingAverage(player.getBattingAverage());
+		p.setPosition(player.getPosition());
+		p.setTeam(player.getTeam());
+		p.setAge(player.getAge());
+		p.setUniformNumber(player.getUniformNumber());
+		return true;
 	}
 
 	@Override
-	public Players deletePlayer() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean deletePlayer(int id) {
+		Players p = em.find(Players.class, id);
+		em.remove(p);
+		return true;
 	}
 
 }
