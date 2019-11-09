@@ -10,7 +10,7 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<title>Delete Film</title>
+<title>Delete Player</title>
 </head>
 <body style="background-color: lightgray">
 
@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="col-4"></div>
 			<div class="col-4">
-				<h1 style="color: red">Delete this Film</h1>
+				<h1 style="color: red">Delete this Player</h1>
 				<c:choose>
 					<c:when test="${deleteStatus}">
 						<h2>Film Delete Failed!</h2>
@@ -32,37 +32,34 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8">
-				<form:form action="filmDelete.do" method="POST" items="${film}">
+				<form:form action="playerDelete.do" method="POST" items="${player}">
 					<div class="form-group">
-						<input type="hidden" name="id" value="${film.id }"/><label
-							for="title">Title</label> <input type="text" name="title"
-							class="form-control" value="${film.title}" readonly> <br> <label
-							for="desc">Description</label> <input type="text"
-							name="description" class="form-control"
-							value="${film.description}" readonly> <br> <label
-							for="releaseYear">Release Year</label> <input type="text"
-							name="releaseYear" class="form-control"
-							value="${film.releaseYear}" readonly> <br> <label
-							for="languageId">Language ID (1-6)</label> <input type="text"
-							name="languageId" class="form-control" value="${film.languageId}" readonly>
-						<br> <label for="rentalDuration">Rental Duration</label> <input
-							type="text" name="rentalDuration" class="form-control"
-							value="${film.rentalDuration}" readonly> <br> <label
-							for="rentalRate">Rental Rate</label> <input type="text"
-							name="rentalRate" class="form-control" value="${film.rentalRate}" readonly>
-						<br> <label for="length">Length</label> <input type="text"
-							name="length" class="form-control" value="${film.length}" readonly>
-						<br> <label for="replacementCost">Replacement Cost</label> <input
-							type="text" name="replacementCost" class="form-control"
-							value="${film.replacementCost}" readonly> <br> <label
-							for="rating">Rating</label> <input type="text" name="rating"
-							class="form-control" value="${film.rating}" readonly> <br> <label
-							for="specialFeatures">Special Features</label> <input type="text"
-							name="specialFeatures" class="form-control"
-							value="${film.specialFeatures}" readonly>
+						<input type="hidden" name="id" value="${player.id}"/><label
+							for="firstName">First Name</label> <input type="text" name="firstName"
+							class="form-control" value="${player.firstName}" readonly> <br> <label
+							for="lastName">Last Name</label> <input type="text"
+							name="lastName" class="form-control"
+							value="${player.lastName}" readonly> <br> <label
+							for="homeruns">Home Runs</label> <input type="text"
+							name="homeruns" class="form-control"
+							value="${player.homeruns}" readonly> <br> <label
+							for="rbi">RBI</label> <input type="text"
+							name="rbi" class="form-control" value="${player.rbi}" readonly>
+						<br> <label for="battingAverage">Batting Average</label> <input
+							type="text" name="battingAverage" class="form-control"
+							value="${player.battingAverage}" readonly> <br> <label
+							for="position">Position</label> <input type="text"
+							name="position" class="form-control" value="${player.position}" readonly>
+						<br> <label for="team">Team</label> <input type="text"
+							name="team" class="form-control" value="${player.team}" readonly>
+						<br> <label for="age">Age</label> <input
+							type="text" name="age" class="form-control"
+							value="${player.age}" readonly> <br> <label
+							for="uniformNumber">Uniform Number</label> <input type="text" name="uniformNumber"
+							class="form-control" value="${player.uniformNumber}" readonly> <br>
 					</div>
 					<button type="submit" class="btn btn-outline-danger btn-block btn-lg">Delete
-						Film</button>
+						Player</button>
 				</form:form>
 				<div class="col-2"></div>
 			</div>
@@ -73,7 +70,7 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8">
-				<form action="welcomePage.do" method="get">
+				<form action="/" method="get">
 					<button class="btn btn-success btn-block btn-lg">Back to
 						Home</button>
 				</form>
