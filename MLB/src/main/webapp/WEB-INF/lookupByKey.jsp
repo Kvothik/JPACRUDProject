@@ -14,7 +14,53 @@
 <title>Lookup Players By Key Word</title>
 </head>
 <body>
+
+	<header class="masthead bg-dark text-white text-center">
+		<div class="container d-flex align-items-center flex-column">
+
+			<!-- Masthead Heading -->
+			<h1 class="masthead-heading text-uppercase mb-0">MLB Players</h1>
+
+			<!-- Masthead Subheading -->
+			<p class="masthead-subheading font-weight-light mb-0">Spring Boot
+				Database App</p>
+
+		</div>
+	</header>
+
 	<h1>Lookup Players By Key Word</h1>
+
+	<div class="container">
+		<div class="row">
+			<!-- Player lookup Card -->
+			<div class="col-lg-4 col-lg-push-4">
+				<div class="card" style="width: 18rem;">
+					<img
+						src="https://i.pinimg.com/originals/83/49/4a/83494af8cd9ca41136b99d34b9586512.jpg"
+						class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Player Lookup</h5>
+						<p class="card-text">Find a player by team, name, or ID.</p>
+						<a href="playerLookup.do" class="btn btn-primary btn-block btn-lg">Search</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4"></div>
+			<!-- Add A Player Card -->
+			<div class="col-lg-4 col-lg-pull-4">
+				<div class="card" style="width: 18rem;">
+					<img
+						src="https://thumbs.dreamstime.com/b/baseball-hit-ball-disintegrating-65434168.jpg"
+						class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Add A Player</h5>
+						<p class="card-text">Add a new player to the database.</p>
+						<a href="playerCreate.do" class="btn btn-primary btn-block btn-lg">Search</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -22,8 +68,9 @@
 			<div class="col-6">
 				<form:form action="playersByKey.do" method="GET">
 					<div class="form-group">
-						<label for="key">Team Name, First Name, or Last Name</label> <input type="text" name="key"
-							class="form-control" placeholder="Enter key word to search">
+						<label for="key">Team Name, First Name, or Last Name</label> <input
+							type="text" name="key" class="form-control"
+							placeholder="Enter key word to search">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block btn-lg">Search</button>
 				</form:form>
@@ -44,6 +91,14 @@
 			</div>
 		</div>
 	</div>
+
+	<footer id="footer">
+		<p>
+			<em>Created by Kelly Cromeans</em>
+		</p>
+
+	</footer>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>

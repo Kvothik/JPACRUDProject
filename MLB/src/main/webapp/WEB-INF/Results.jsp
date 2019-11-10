@@ -12,15 +12,31 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Result.css">
 <title>Player Results</title>
 </head>
 <body>
+
+
+	<header class="masthead bg-dark text-white text-center">
+		<div class="container d-flex align-items-center flex-column">
+
+			<!-- Masthead Heading -->
+			<h1 class="masthead-heading text-uppercase mb-0">MLB Players</h1>
+
+			<!-- Masthead Subheading -->
+			<p class="masthead-subheading font-weight-light mb-0">Spring Boot
+				Database App</p>
+
+		</div>
+	</header>
+
 	<c:choose>
 		<c:when test="${fn: length(player) gt 0}">
 			<c:forEach var="p" items="${player}">
 				<div class="table-responsive tableFixHead">
 					<table
-						class="table table-striped table-bordered table-hover text-align: center">
+						class="table table-striped table-bordered table-hover text-align: center table-dark">
 						<thead class="table-dark text-center">
 							<tr>
 								<td><strong>Player ID</strong></td>
@@ -51,13 +67,15 @@
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan="3"><form action="playerUpdate.do" method="get">
-										<button class="btn btn-outline-warning btn-block btn-lg">Update
+								<td colspan="5"><form action="playerUpdate.do" method="get">
+										<button
+											class="btn btn-outline-warning btn-block btn-lg pull-left">Update
 											this Player</button>
 										<input type="hidden" name="id" value="${p.id}">
 									</form></td>
-								<td colspan="3"><form action="playerDelete.do" method="get">
-										<button class="btn btn-outline-danger btn-block btn-lg">Delete
+								<td colspan="5"><form action="playerDelete.do" method="get">
+										<button
+											class="btn btn-outline-danger btn-block btn-lg pull-right">Delete
 											this Player</button>
 										<input type="hidden" name="id" value="${p.id}">
 									</form></td>
@@ -82,10 +100,16 @@
 		</c:when>
 	</c:choose>
 
-
 	<form action="/" method="get">
-		<button class="btn btn-success btn-lg">Back to Home</button>
+		<button class="btn btn-success btn-lg btn-block">Back to Home</button>
 	</form>
+
+	<footer id="footer">
+		<p>
+			<em>Created by Kelly Cromeans</em>
+		</p>
+
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -99,4 +123,5 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 </body>
+
 </html>
