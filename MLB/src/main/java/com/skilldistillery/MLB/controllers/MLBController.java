@@ -109,7 +109,6 @@ public class MLBController {
 	@RequestMapping(path = "playerUpdate.do", method = RequestMethod.POST)
 	public ModelAndView playerUpdateResult(Players player) {
 		ModelAndView mv = new ModelAndView();
-//		System.out.println(film.allDetails());
 		List<Players> p = new ArrayList<>();
 		if (dao.updatePlayer(player)) {
 			p.add(dao.findById(player.getId()));

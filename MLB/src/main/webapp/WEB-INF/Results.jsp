@@ -70,10 +70,10 @@
 
 		<c:when test="${deleteStatus}">
 			<h2>Player Delete Successful!</h2>
+		</c:when>
 		<c:otherwise>
 			<h2>No Matching Player Found</h2>
 		</c:otherwise>
-		</c:when>
 	</c:choose>
 
 	<c:choose>

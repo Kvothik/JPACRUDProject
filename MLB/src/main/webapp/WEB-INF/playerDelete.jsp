@@ -58,6 +58,7 @@
 							for="uniformNumber">Uniform Number</label> <input type="text" name="uniformNumber"
 							class="form-control" value="${player.uniformNumber}" readonly> <br>
 					</div>
+					<h3>Are you sure you want to delete this player?</h3>
 					<button type="submit" class="btn btn-outline-danger btn-block btn-lg">Delete
 						Player</button>
 				</form:form>

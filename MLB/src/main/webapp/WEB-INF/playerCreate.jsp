@@ -20,7 +20,7 @@
 				<h1 style="color: red">Add a New Player</h1>
 				<c:choose>
 					<c:when test="${createStatus}">
-						<h2>Film Creation Failed!</h2>
+						<h2>Player Creation Failed!</h2>
 					</c:when>
 				</c:choose>
 				<div class="col-4"></div>

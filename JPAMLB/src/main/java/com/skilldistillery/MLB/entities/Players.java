@@ -39,7 +39,6 @@ public class Players {
 
 	public Players(int id, String firstName, String lastName, int homeruns, double battingAverage, int rbi,
 			String position, String team, int age, int uniformNumber) {
-		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -140,7 +139,7 @@ public class Players {
 	}
 
 	public void setLastName(String lastName) {
-		lastName = lastName;
+		this.lastName = lastName;
 	}
 
 	public int getHomeruns() {
