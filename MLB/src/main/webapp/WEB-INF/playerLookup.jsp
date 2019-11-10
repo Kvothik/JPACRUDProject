@@ -28,9 +28,9 @@
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col-6">
-				<form action="lookupByTeam.do" method="get">
+				<form action="lookupByKey.do" method="get">
 					<button class="btn btn-primary btn-block btn-lg">Lookup by
-						Team</button>
+						Key Word</button>
 				</form>
 			</div>
 

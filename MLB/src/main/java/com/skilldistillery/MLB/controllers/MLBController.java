@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -56,17 +55,17 @@ public class MLBController {
 		return mv;
 	}
 
-	@RequestMapping(path = "lookupByTeam.do")
-	public ModelAndView filmLookupByKeyword() {
+	@RequestMapping(path = "lookupByKey.do")
+	public ModelAndView LookupByKeyword() {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("lookupByTeam");
+		mv.setViewName("lookupByKey");
 		return mv;
 	}
 
-	@RequestMapping(path = "playersByTeam.do", method = RequestMethod.GET)
-	public ModelAndView resultByKeyword(String team) {
+	@RequestMapping(path = "playersByKey.do", params = "key", method = RequestMethod.GET)
+	public ModelAndView resultByKeyword(String key) {
 		ModelAndView mv = new ModelAndView();
-		List<Players> playerList = dao.findByTeam(team);
+		List<Players> playerList = dao.findByKey(key);
 		mv.addObject("player", playerList);
 		mv.addObject("deleteStatus", false);
 		mv.addObject("updateStatus", false);

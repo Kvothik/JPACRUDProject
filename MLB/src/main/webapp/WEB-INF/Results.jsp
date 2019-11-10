@@ -52,30 +52,28 @@
 						<tfoot>
 							<tr>
 								<td colspan="3"><form action="playerUpdate.do" method="get">
-										<button class="btn btn-outline-warning btn-block btn-lg"
-											>Update this Player</button>
+										<button class="btn btn-outline-warning btn-block btn-lg">Update
+											this Player</button>
 										<input type="hidden" name="id" value="${p.id}">
 									</form></td>
 								<td colspan="3"><form action="playerDelete.do" method="get">
-										<button class="btn btn-outline-danger btn-block btn-lg"
-											>Delete this Player</button>
+										<button class="btn btn-outline-danger btn-block btn-lg">Delete
+											this Player</button>
 										<input type="hidden" name="id" value="${p.id}">
 									</form></td>
 							</tr>
 						</tfoot>
 					</table>
-
 				</div>
 			</c:forEach>
 		</c:when>
 
-
 		<c:when test="${deleteStatus}">
 			<h2>Player Delete Successful!</h2>
-		</c:when>
 		<c:otherwise>
 			<h2>No Matching Player Found</h2>
 		</c:otherwise>
+		</c:when>
 	</c:choose>
 
 	<c:choose>
@@ -83,6 +81,7 @@
 			<h2>Player Update Successful!</h2>
 		</c:when>
 	</c:choose>
+
 
 	<form action="/" method="get">
 		<button class="btn btn-success btn-lg">Back to Home</button>

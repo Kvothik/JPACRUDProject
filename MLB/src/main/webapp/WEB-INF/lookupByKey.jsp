@@ -11,19 +11,19 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<title>Lookup Players By Team</title>
+<title>Lookup Players By Key Word</title>
 </head>
 <body>
-	<h1>Lookup Players By Team</h1>
+	<h1>Lookup Players By Key Word</h1>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col-6">
-				<form:form action="playersByTeam.do" method="GET">
+				<form:form action="playersByKey.do" method="GET">
 					<div class="form-group">
-						<label for="team">Team Name</label> <input type="text" name="team"
-							class="form-control" placeholder="Enter Team name to search">
+						<label for="key">Team Name, First Name, or Last Name</label> <input type="text" name="key"
+							class="form-control" placeholder="Enter key word to search">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block btn-lg">Search</button>
 				</form:form>

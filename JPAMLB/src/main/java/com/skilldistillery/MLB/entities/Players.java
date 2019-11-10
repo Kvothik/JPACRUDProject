@@ -17,7 +17,7 @@ public class Players {
 	private String firstName;
 
 	@Column(name = "last_name")
-	private String LastName;
+	private String lastName;
 
 	@Column(name = "home_runs")
 	private int homeruns;
@@ -38,16 +38,18 @@ public class Players {
 	}
 
 	public Players(int id, String firstName, String lastName, int homeruns, double battingAverage, int rbi,
-			String position, String team) {
+			String position, String team, int age, int uniformNumber) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
-		LastName = lastName;
+		this.lastName = lastName;
 		this.homeruns = homeruns;
 		this.battingAverage = battingAverage;
 		this.rbi = rbi;
 		this.position = position;
 		this.team = team;
+		this.age = age;
+		this.uniformNumber = uniformNumber;
 	}
 
 	@Override
@@ -58,7 +60,7 @@ public class Players {
 		builder.append(", firstName=");
 		builder.append(firstName);
 		builder.append(", LastName=");
-		builder.append(LastName);
+		builder.append(lastName);
 		builder.append(", homeruns=");
 		builder.append(homeruns);
 		builder.append(", battingAverage=");
@@ -134,11 +136,11 @@ public class Players {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		lastName = lastName;
 	}
 
 	public int getHomeruns() {
@@ -161,7 +163,7 @@ public class Players {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((LastName == null) ? 0 : LastName.hashCode());
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + age;
 		long temp;
 		temp = Double.doubleToLongBits(battingAverage);
@@ -185,10 +187,10 @@ public class Players {
 		if (getClass() != obj.getClass())
 			return false;
 		Players other = (Players) obj;
-		if (LastName == null) {
-			if (other.LastName != null)
+		if (lastName == null) {
+			if (other.lastName != null)
 				return false;
-		} else if (!LastName.equals(other.LastName))
+		} else if (!lastName.equals(other.lastName))
 			return false;
 		if (age != other.age)
 			return false;

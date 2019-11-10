@@ -6,7 +6,7 @@ import com.skilldistillery.MLB.entities.Players;
 
 public interface MLBDAO {
 	Players findById(int id);
-	List<Players> findByTeam(String team);
+	List<Players> findByKey(String key);
 	List<Players> findAll();
 	Players createPlayer(Players player);
 	boolean updatePlayer(Players player);

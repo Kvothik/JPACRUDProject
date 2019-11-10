@@ -1,5 +1,6 @@
 package com.skilldistillery.MLB.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -23,9 +24,11 @@ public class MLBDAOImpl implements MLBDAO {
 	}
 
 	@Override
-	public List<Players> findByTeam(String team) {
-		String query = "select p from Players p where p.team = :team";
-		List<Players> results = em.createQuery(query, Players.class).setParameter(1, team).getResultList();
+	public List<Players> findByKey(String key) {
+		String query = "select p from Players p where p.team = :key1 or p.firstName = :key2 or p.lastName = :key3";
+		List<Players> results = em.createQuery(query, Players.class).setParameter("key1", key).setParameter("key2", key)
+				.setParameter("key3", key).getResultList();
+
 		return results;
 	}
 

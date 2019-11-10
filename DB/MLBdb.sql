@@ -61,6 +61,10 @@ INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `bat
 INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (9, 'Kyle', 'Tucker', 4, 11, .269, 'first base', 'Astros', 22, 3);
 INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (10, 'Jose', 'Altuve', 31, 74, .298, 'second base', 'Astros', 29, 27);
 INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (11, 'Alex', 'Bregman', 41, 112, .296, 'third base', 'Astros', 25, 2);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (12, 'Kurt', 'Suzuki', 17, 63, .264, 'catcher', 'Nationals', 36, 28);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (13, 'Trea', 'Turner', 19, 57, .298, 'outfield', 'Nationals', 26, 7);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (14, 'Aaron', 'Judge', 27, 55, .272, 'right field', 'Yankees', 27, 99);
+INSERT INTO `players` (`id`, `first_name`, `last_name`, `home_runs`, `rbi`, `batting_avg`, `position`, `team`, `age`, `uniform_number`) VALUES (15, 'Mike', 'Trout', 45, 104, 0.291, 'Center Field', 'Angels', 27, 27);
 
 COMMIT;
 
