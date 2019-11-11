@@ -12,6 +12,8 @@ Completed: 11/10/19
  This program utilizes a MYSQL database to manipulate data which is mapped to a JPA entity and uses Spring Boot to allow the user to preform full CRUD transactions. The frontend is built with bootstrap, HTML, and css.
  The backend integrates Hibernate and JPA with Spring Boot.
 
+     *It is important to note for anyone testing this project that only 18 players were added to the database at this time. Therefore some team searches will result in -No Players Found. The team with most representation is the Astros*
+
 
 ### Controllers, JSPs, & DAOImpl Information
 
