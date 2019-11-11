@@ -34,3 +34,25 @@ label {
 	font-family: "Lucida Console", Monaco, monospace;
 	text-align: right;
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+}
+
+.card1 {
+	border: 1px solid #d3d3d3;
+	border-radius: .25rem;
+	padding: 15px;
+	background-color: black;
+	color: white;
+}
+
+.card2 {
+	border: 1px solid #d3d3d3;
+	border-radius: .25rem;
+	padding: 15px;
+	background-color: black;
+	color: white;
+}

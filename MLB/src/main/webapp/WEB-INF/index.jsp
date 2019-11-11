@@ -26,12 +26,12 @@
 		</div>
 	</header>
 
-	<div class="container">
+	<div class="grid-container">
 
-		<div class="row">
+		<div class="row ">
 			<!-- Player lookup Card -->
-			<div class="col-lg-4 col-lg-push-4">
-				<div class="card" style="width: 18rem;">
+			<div class="col col-push">
+				<div class="card1" style="width: 45rem;">
 					<img
 						src="https://i.pinimg.com/originals/83/49/4a/83494af8cd9ca41136b99d34b9586512.jpg"
 						class="card-img-top">
@@ -42,17 +42,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4"></div>
+			<div class="col"></div>
 			<!-- Add A Player Card -->
-			<div class="col-lg-4 col-lg-pull-4">
-				<div class="card" style="width: 18rem;">
+			<div class="col col-pull">
+				<div class="card2" style="width: 45rem;">
 					<img
 						src="https://thumbs.dreamstime.com/b/baseball-hit-ball-disintegrating-65434168.jpg"
 						class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Add A Player</h5>
 						<p class="card-text">Add a new player to the database.</p>
-						<a href="playerCreate.do" class="btn btn-primary btn-block btn-lg">Search</a>
+						<a href="playerCreate.do" class="btn btn-primary btn-block btn-lg">Add
+							Player</a>
 					</div>
 				</div>
 			</div>
