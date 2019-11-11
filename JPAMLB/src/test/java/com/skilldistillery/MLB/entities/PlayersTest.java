@@ -40,8 +40,47 @@ class PlayersTest {
 	}
 
 	@Test
-	void test() {
-		assertEquals("Jose", p.getFirstName());
+	void testEntityFirstName() {
+		assertEquals("Carlos", p.getFirstName());
+	}
+
+	@Test
+	void testEntityLastName() {
+		assertEquals("Correa", p.getLastName());
+	}
+
+	@Test
+	void testEntityHomeruns() {
+		assertEquals(21, p.getHomeruns());
+	}
+
+	@Test
+	void testEntityRbi() {
+		assertEquals(59, p.getRbi());
+	}
+	@Test
+	void testEntityBattingAverage() {
+		assertEquals(0.279, p.getBattingAverage());
+	}
+
+	@Test
+	void testEntityPosition() {
+		assertEquals("short stop", p.getPosition());
+	}
+
+	@Test
+	void testEntityTeam() {
+		assertEquals("Astros", p.getTeam());
+	}
+
+	@Test
+	void testEntityAge() {
+		assertEquals(25, p.getAge());
+	}
+
+	@Test
+	void testEntityUniformNumber() {
+		assertEquals(1, p.getUniformNumber());
 	}
 
 }
