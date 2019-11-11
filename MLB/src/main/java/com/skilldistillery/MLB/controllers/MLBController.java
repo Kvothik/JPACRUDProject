@@ -18,7 +18,7 @@ public class MLBController {
 	@Autowired
 	private MLBDAO dao;
 
-	@RequestMapping(path = "/")
+	@RequestMapping(path = {"/", "index.do"})
 	public ModelAndView welcomePage() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("index");

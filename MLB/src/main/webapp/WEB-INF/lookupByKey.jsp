@@ -84,7 +84,7 @@
 			<div class="row">
 				<div class="col-3"></div>
 				<div class="col-6">
-					<form action="/" method="get">
+					<form action="index.do" method="get">
 						<button class="btn btn-success btn-block btn-lg">Back to
 							Home</button>
 					</form>

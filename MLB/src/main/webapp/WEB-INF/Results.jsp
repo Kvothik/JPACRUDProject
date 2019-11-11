@@ -100,7 +100,7 @@
 		</c:when>
 	</c:choose>
 
-	<form action="/" method="get">
+	<form action="index.do" method="get">
 		<button class="btn btn-success btn-lg btn-block">Back to Home</button>
 	</form>
 
